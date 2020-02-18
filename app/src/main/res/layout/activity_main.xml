@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent2"
+    android:orientation="vertical"
+    tools:context="com.revolve44.solarforecastmk2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/current_output"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="kW"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/power"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nominal Power of My PV Station"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/cIty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="My City"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/current_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="temp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        >
+
+        <Button
+            android:id="@+id/MainGet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="OnClickListener1"
+            android:text="Get Current Data" />
+
+        <Button
+            android:id="@+id/to_second_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="toSecondActivity"
+            android:text="calculator *Beta" />
+
+        <Button
+            android:id="@+id/save_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="toGraphActivity"
+            android:text="save" />
+
+        <Button
+            android:id="@+id/GraphButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="toGraphActivity"
+            android:text="Graph" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/your_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="your city"
+            android:inputType="textPersonName"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/nominal_output"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="nominal output kW"
+            android:inputType="number"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
